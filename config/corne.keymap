@@ -15,18 +15,18 @@
 
                 default_layer {
                         bindings = <
-   &kp ESC          &kp Q   &kp W    &kp E      &kp R       &kp T               &kp Y       &kp U      &kp I       &kp O     &kp P      &kp BSPC
-   &kp TAB          &kp A   &kp S    &kp D      &kp F       &kp G               &kp H       &kp J      &kp K       &kp L     &kp SEMI   &kp DEL
-   &mt LSHFT CAPS   &kp Z   &kp X    &kp C      &kp V       &kp B               &kp N       &kp M      &kp COMMA   &kp DOT   &kp FSLH   &kp SQT
-                                     &kp LGUI   &kp LCTRL   &lt 1 SPACE         &lt 2 RET   &kp RALT   &mo 3
+   &kp ESC          &kp Q   &kp W    &kp E      &kp R       &kp T           &kp Y         &kp U      &kp I       &kp O     &kp P      &kp BSPC
+   &kp TAB          &kp A   &kp S    &kp D      &kp F       &kp G           &kp H         &kp J      &kp K       &kp L     &kp SEMI   &kp DEL
+   &mt LSHFT CAPS   &kp Z   &kp X    &kp C      &kp V       &kp B           &kp N         &kp M      &kp COMMA   &kp DOT   &kp FSLH   &kp SQT
+                                     &kp LGUI   &kp LCTRL   &lt 1 RET       &lt 2 SPACE   &kp RALT   &mo 3
                         >;
                 };
 
                 special_chars_layer {
                         bindings = <
-   &trans   &kp AT      &kp HASH    &kp DOLLAR   &kp N4    &trans         &kp LPAR   &kp RPAR   &kp GT      &kp UNDER   &kp MINUS   &trans
-   &trans   &kp EXCL    &kp AMPS    &kp PIPE     &kp DQT   &trans         &kp LBRC   &kp RBRC   &kp LT      &kp PLUS    &kp EQUAL   &trans
-   &trans   &kp QMARK   &kp CARET   &kp TILDE    &trans    &trans         &kp LBKT   &kp RBKT   &kp GRAVE   &kp STAR    &kp BSLH    &trans
+   &trans   &kp AT      &kp HASH    &kp DOLLAR   &kp N4    &trans         &kp LPAR   &kp RPAR   &kp GT      &kp LT     &kp GRAVE   &trans
+   &trans   &kp EXCL    &kp AMPS    &kp PIPE     &kp DQT   &trans         &kp LBRC   &kp RBRC   &kp UNDER   &kp MINUS  &kp EQUAL   &trans
+   &trans   &kp QMARK   &kp CARET   &kp TILDE    &trans    &trans         &kp LBKT   &kp RBKT   &kp PLUS    &kp STAR   &kp BSLH    &trans
                                     &trans       &trans    &trans         &trans     &trans     &trans
                         >;
                 };
@@ -40,7 +40,7 @@
                         >;
                 };
 
-                func_and_nav_layer {
+                func_bt_and_nav_layer {
                         bindings = <
    &trans   &kp C_PREV     &kp C_PP       &kp C_NEXT   &trans         &trans               &kp PG_UP   &kp HOME   &kp UP     &kp END     &trans   &trans
    &trans   &kp C_VOL_UP   &kp C_VOL_DN   &kp C_MUTE   &bt BT_SEL 0   &bt BT_SEL 1         &kp PG_DN   &kp LEFT   &kp DOWN   &kp RIGHT   &trans   &trans
