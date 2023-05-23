@@ -24,7 +24,7 @@
 
                 special_chars_layer {
                         bindings = <
-   &trans   &kp AT      &kp HASH    &kp DOLLAR   &kp N4      &trans         &kp LPAR   &kp RPAR   &kp GT      &kp LT     &kp GRAVE   &trans
+   &trans   &kp AT      &kp HASH    &kp DOLLAR   &kp N4      &trans         &kp LPAR   &kp RPAR   &kp LT      &kp GT     &kp GRAVE   &trans
    &trans   &kp EXCL    &kp AMPS    &kp PIPE     &kp DQT     &trans         &kp LBRC   &kp RBRC   &kp UNDER   &kp MINUS  &kp EQUAL   &trans
    &trans   &kp QMARK   &kp CARET   &kp TILDE    &kp COLON   &trans         &kp LBKT   &kp RBKT   &kp PLUS    &kp STAR   &kp BSLH    &trans
                                     &trans       &trans      &trans         &trans     &trans     &trans
