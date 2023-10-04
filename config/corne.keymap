@@ -70,24 +70,30 @@
                 combo_underscore {
                         timeout-ms = <50>;
                         key-positions = <32 33>;
-                        bindings = <&kp EQUAL>;
+                        bindings = <&kp UNDER>;
                 };
 
                 combo_minus {
                         timeout-ms = <50>;
                         key-positions = <31 32>;
-                        bindings = <&kp EQUAL>;
+                        bindings = <&kp MINUS>;
                 };
 
-                combo_copy_mac {
+                combo_cut_mac {
                         timeout-ms = <50>;
-                        key-positions = <27 28>;
-                        bindings = <&kp LG(C)>;
+                        key-positions = <25 26>;
+                        bindings = <&kp LG(X)>;
                 };
 
                 combo_paste_mac {
                         timeout-ms = <50>;
                         key-positions = <26 27>;
+                        bindings = <&kp LG(V)>;
+                };
+
+                combo_copy_mac {
+                        timeout-ms = <50>;
+                        key-positions = <27 28>;
                         bindings = <&kp LG(C)>;
                 };
 
