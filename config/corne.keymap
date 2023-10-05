@@ -22,7 +22,7 @@
                 combo_closing_parenthesis {
                         timeout-ms = <50>;
                         key-positions = <19 20>;
-                        bindings = <&kp LPAR>;
+                        bindings = <&kp RPAR>;
                 };
 
                 combo_opening_curly_brace {
