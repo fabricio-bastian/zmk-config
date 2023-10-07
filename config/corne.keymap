@@ -120,12 +120,12 @@
             key-positions = <16 19>;
         };
 
-        combo_sticky_layer2 {
+        combo_toggle_layer2 {
             bindings = <&tog 2>;
             key-positions = <15 20>;
         };
 
-        combo_sticky_layer3 {
+        combo_toggle_layer3 {
             bindings = <&tog 3>;
             key-positions = <14 21>;
         };
