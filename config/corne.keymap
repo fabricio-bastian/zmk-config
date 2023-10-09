@@ -85,16 +85,16 @@
             bindings = <&kp LG(X)>;
         };
 
-        combo_paste_mac {
-            timeout-ms = <50>;
-            key-positions = <26 27>;
-            bindings = <&kp LG(V)>;
-        };
-
         combo_copy_mac {
             timeout-ms = <50>;
-            key-positions = <27 28>;
+            key-positions = <26 27>;
             bindings = <&kp LG(C)>;
+        };
+
+        combo_paste_mac {
+            timeout-ms = <50>;
+            key-positions = <27 28>;
+            bindings = <&kp LG(V)>;
         };
 
         combo_undo_mac {
