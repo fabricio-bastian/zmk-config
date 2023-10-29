@@ -140,16 +140,63 @@
         };
     };
 
+    behaviors {
+        lh_kp_pht: lh_kp_pht {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LEFT_POSITIONAL_KP_HOLD_TAP";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            hold-trigger-key-positions = <6 7 8 9 10 18 19 20 21 22 30 31 32 33 34>;
+            tapping-term-ms = <100>;
+            quick-tap-ms = <200>;
+            flavor = "tap-unless-interrupted";
+        };
+        rh_kp_pht: rh_kp_pht {
+            compatible = "zmk,behavior-hold-tap";
+            label = "RIGHT_POSITIONAL_KP_HOLD_TAP";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <100>;
+            quick-tap-ms = <200>;
+            flavor = "tap-unless-interrupted";
+            hold-trigger-key-positions = <1 2 3 4 13 14 15 16 25 26 27 28 5 17 29>;
+        };
+        lh_lt_pht: lh_lt_pht {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LEFT_POSITIONAL_LT_HOLD_TAP";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            hold-trigger-key-positions = <6 7 8 9 10 18 19 20 21 22 30 31 32 33 34>;
+            tapping-term-ms = <100>;
+            quick-tap-ms = <200>;
+            flavor = "tap-unless-interrupted";
+        };
+        rh_lt_pht: rh_lt_pht {
+            compatible = "zmk,behavior-hold-tap";
+            label = "RIGHT_POSITIONAL_LT_HOLD_TAP";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <100>;
+            quick-tap-ms = <200>;
+            flavor = "tap-unless-interrupted";
+            hold-trigger-key-positions = <1 2 3 4 13 14 15 16 25 26 27 28 5 17 29>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             label = "Base";
             bindings = <
-&kp ESC       &kp Q  &kp W  &kp E         &lt 3 R        &kp T        &kp Y        &kp U          &kp I      &kp O    &kp P     &kp BSPC
-&mt LALT TAB  &kp A  &kp S  &kp D         &kp F          &kp G        &kp H        &kp J          &kp K      &kp L    &kp SEMI  &mt RCTRL DEL
-&kp LSHFT     &kp Z  &kp X  &kp C         &kp V          &kp B        &kp N        &kp M          &kp COMMA  &kp DOT  &kp FSLH  &sk RSHFT
-                            &mt LGUI ESC  &mt LCTRL TAB  &lt 2 RET    &lt 1 SPACE  &mt RALT BSPC  &mo 3
+&kp ESC       &kp Q  &kp W           &kp E           &kp R           &kp T                 &kp Y               &kp U           &kp I           &kp O           &kp P     &kp BSPC
+&mt LALT TAB  &kp A  &lh_lt_pht 3 S  &lh_lt_pht 2 D  &lh_lt_pht 1 F  &lh_kp_pht LSHFT G    &rh_kp_pht RSHFT H  &rh_lt_pht 1 J  &rh_lt_pht 2 K  &rh_lt_pht 3 L  &kp SEMI  &mt RCTRL DEL
+&kp LSHFT     &kp Z  &kp X           &kp C           &kp V           &kp B                 &kp N               &kp M           &kp COMMA       &kp DOT         &kp FSLH  &sk RSHFT
+                                     &mt LGUI ESC    &mt LCTRL TAB   &lt 2 RET             &lt 1 SPACE         &mt RALT BSPC   &mo 3
             >;
         };
 
