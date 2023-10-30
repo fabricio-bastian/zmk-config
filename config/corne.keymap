@@ -194,7 +194,7 @@
             label = "Base";
             bindings = <
 &kp ESC       &kp Q  &kp W  &kp E           &lt 3 R             &kp T        &kp Y        &kp U               &kp I           &kp O    &kp P     &kp BSPC
-&mt LALT TAB  &kp A  &kp S  &lh_lt_pht 2 D  &lh_kp_pht LSHFT F  &kp G        &kp H        &rh_kp_pht RSHFT J  &rh_lt_pht 1 K  &kp L    &kp SEMI  &mt RCTRL DEL
+&mt LALT TAB  &kp A  &kp S  &lh_lt_pht 1 D  &lh_kp_pht LSHFT F  &kp G        &kp H        &rh_kp_pht RSHFT J  &rh_lt_pht 1 K  &kp L    &kp SEMI  &mt RCTRL DEL
 &kp LSHFT     &kp Z  &kp X  &kp C           &kp V               &kp B        &kp N        &kp M               &kp COMMA       &kp DOT  &kp FSLH  &sk RSHFT
                             &mt LGUI ESC    &mt LCTRL TAB       &lt 2 RET    &lt 1 SPACE  &mt RALT BSPC       &mo 3
             >;
