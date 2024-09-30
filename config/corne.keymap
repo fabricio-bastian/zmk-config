@@ -240,6 +240,7 @@
         };
 
         mouse {
+            label = "Mouse";
             bindings = <
 &trans  &trans  &kp PAGE_DOWN   &kp UP_ARROW    &kp PAGE_UP      &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &mkp RCLK       &mkp MCLK       &mkp LCLK        &trans    &trans  &trans  &trans  &trans  &trans  &trans
