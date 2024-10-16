@@ -242,10 +242,10 @@
         mouse {
             label = "Mouse";
             bindings = <
-&trans  &trans  &kp PAGE_DOWN   &kp UP_ARROW    &kp PAGE_UP      &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &mkp RCLK       &mkp MCLK       &mkp LCLK        &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                &trans          &trans           &trans    &trans  &trans  &trans
+&trans  &trans  &kp PAGE_DOWN   &kp UP_ARROW    &kp PAGE_UP      &kp LC(UP_ARROW)    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &mkp RCLK       &mkp MCLK       &mkp LCLK        &mkp MB5            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &mkp MB4            &trans  &trans  &trans  &trans  &trans  &trans
+                                &trans          &trans           &trans              &trans  &trans  &trans
             >;
         };
     };
