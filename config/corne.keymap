@@ -126,6 +126,11 @@
             bindings = <&tog 4>;
             key-positions = <38 0>;
         };
+
+        soft_off_corne {
+            bindings = <&soft_off_keyb>;
+            key-positions = <0 5>;
+        };
     };
 
     behaviors {
@@ -176,6 +181,13 @@
             flavor = "tap-unless-interrupted";
             hold-trigger-key-positions = <1 2 3 4 13 14 15 16 25 26 27 28 5 17 29>;
         };
+
+        soft_off_keyb: soft_off_keyb {
+            compatible = "zmk,behavior-soft-off";
+            label = "SOFT_OFF_KEYB";
+            #binding-cells = <0>;
+            hold-time-ms = <2000>;
+        };
     };
 
     keymap {
@@ -224,7 +236,7 @@
         mouse {
             label = "Mouse";
             bindings = <
-&trans  &trans            &kp PAGE_DOWN   &kp UP_ARROW    &kp PAGE_UP      &kp LC(UP_ARROW)    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LC(DOWN)      &kp PAGE_DOWN   &kp UP_ARROW    &kp PAGE_UP      &kp LC(UP_ARROW)    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LC(UP_ARROW)  &mkp RCLK       &mkp MCLK       &mkp LCLK        &mkp MB5            &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans            &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &mkp MB4            &trans  &trans  &trans  &trans  &trans  &trans
                                           &trans          &trans           &trans              &trans  &trans  &trans
